@@ -1,0 +1,44 @@
+.web-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    transition: all .2s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.web-dialog .content-node {
+    position: fixed;
+    top: calc(50% + 100px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    transition: all .2s ease;
+}
+
+.web-dialog.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.web-dialog.show .content-node {
+    top: 50%;
+}
+
+.web-dialog .close-button {
+    display: block;
+    margin: 0;
+    padding: 16px;
+    border: none;
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    background: transparent;
+    font-size: 16;
+    color: #fff;
+    cursor: pointer;
+}
