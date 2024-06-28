@@ -28,6 +28,10 @@ class WebDialog {
         }
     }
 
+    appendChild(dom) {
+        this.contentNode.appendChild(dom);
+    }
+
     setInnerHTML(htmlString) {
         this.contentNode.innerHTML = htmlString;
     }
