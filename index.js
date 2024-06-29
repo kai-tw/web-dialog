@@ -28,6 +28,11 @@ class WebDialog {
         }
     }
 
+    clear() {
+        this.dialogNode.parentElement.removeChild(this.dialogNode);
+        delete this;
+    }
+
     appendChild(dom) {
         this.contentNode.appendChild(dom);
     }
